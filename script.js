@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (window.innerWidth <= 600) {
                 window.location.href = '/home.html';
             } else {
-                window.location.href = '/main.html';
+                window.location.href = 'main.html';
             }
         } else {
             // Display an error message for incorrect credentials
