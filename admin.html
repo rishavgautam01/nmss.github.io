@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admin.css">
+    <title>Admin Panel</title>
+</head>
+<body>
+
+<div class="container">
+    <h1 id="welcomeMessage" class="welcome-animation">Welcome Admin</h1>
+
+    <div class="divider"></div>
+
+    <!-- Notices Section -->
+    <div id="noticeForm" class="notice-form">
+        <label for="newNoticeContent">Add Notices:</label>
+        <textarea id="newNoticeContent" rows="4" cols="50"></textarea>
+        <button type="button" onclick="addNotice()" class="submit-button">Submit</button>
+    </div>
+
+    <div class="divider"></div>
+
+  <!-- Notices Display Section with Delete Notices Box -->
+<div id="noticesDisplay" class="section">
+    <h2>Notices</h2>
+    <table id="notices-table">
+        <thead>
+            <tr>
+                <th>S.N.</th>
+                <th>Notice</th>
+                <th>Date</th>
+                <!-- Remove the 'Action' header -->
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Notices will be added dynamically -->
+        </tbody>
+    </table>
+
+    <!-- Add a box to delete notices by serial number -->
+    <div id="deleteNoticeBox">
+        <h2>Delete Notices</h2>
+        <label for="deleteNoticeSN">Enter Serial Number:</label>
+        <input type="text" id="deleteNoticeSN" placeholder="Serial Number">
+        <button type="button" onclick="deleteNoticeBySN()" class="submit-button">Delete</button>
+    </div>
+</div>
+
+    <div class="divider"></div>
+
+   <!-- Teachers Information Section -->
+<div id="teachersSection" class="section">
+    <h2>Teachers Information</h2>
+    <table id="teachersTable">
+        <thead>
+            <tr>
+                <th>SN</th>
+                <th>Name</th>
+                <th>Post</th>
+                <th>Phone Number</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Teacher data will be added dynamically -->
+        </tbody>
+    </table>
+    <h2>Add Teacher</h2>
+    <label for="teacherName">Teacher Name:</label>
+    <input type="text" id="teacherName" placeholder="Enter teacher name">
+    <label for="teacherPost">Teacher Post:</label>
+    <input type="text" id="teacherPost" placeholder="Enter teacher post">
+    <label for="teacherPhone">Teacher Phone Number:</label>
+    <input type="text" id="teacherPhone" placeholder="Enter teacher phone number">
+    <button onclick="addTeacher()" class="submit-button">Add Teacher</button>
+
+    <h2>Delete Teacher</h2>
+    <label for="deleteTeacherSN">Teacher SN:</label>
+    <input type="text" id="deleteTeacherSN" placeholder="Enter teacher SN to delete">
+    <button onclick="deleteTeacher()" class="submit-button">Delete Teacher</button>
+
+    
+    
+</div>
+
+
+<script src="admin.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+

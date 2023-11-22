@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.welcome-animation {
+    animation: fadeIn 1s ease-out;
+    color: #000; /* Black color for the text */
+    margin: 0;
+}
+
+.divider {
+    height: 1px;
+    background-color: #ddd;
+    margin: 20px 0;
+}
+
+.notice-form {
+    padding: 20px;
+    background-color: #f9f9f9; /* Change the color to your preference */
+    border-radius: 8px;
+}
+
+.section {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.submit-button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}
+
+#teachersTable {
+    border: 1px solid #ddd;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#teachersTable th, #teachersTable td {
+    padding: 10px;
+    text-align: left;
+}
+
+#teachersTable th {
+    background-color: #4caf50; /* Green color for the table head */
+    color: #fff; /* White color for the text in table head */
+}
+
+#teachersTable td {
+    background-color: #fff; /* White color for the table data */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+th, td {
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+  
