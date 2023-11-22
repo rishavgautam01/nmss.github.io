@@ -34,9 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Check if the entered credentials are valid
         if (username === validUsername && password === validPassword){
-            
-        
-            window.location.href = 'main.html';
+             window.location.href = 'main.html';
             }
         
         if(username==='admin' && password==='pass'){
