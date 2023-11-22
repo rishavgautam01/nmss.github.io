@@ -33,15 +33,12 @@ document.addEventListener('DOMContentLoaded', function () {
         const validPassword = 'examplepassword';
 
         // Check if the entered credentials are valid
-        if (username === validUsername && password === validPassword)
+        if (username === validUsername && password === validPassword){
             
         
-                window.location.href = 'main.html';
+            window.location.href = 'main.html';
             }
-        } else {
-            // Display an error message for incorrect credentials
-            passwordError.textContent = 'Incorrect username or password';
-        }
+        
         if(username==='admin' && password==='pass'){
             window.location.href='admin.html';
         }
