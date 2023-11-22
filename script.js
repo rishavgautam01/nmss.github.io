@@ -33,11 +33,9 @@ document.addEventListener('DOMContentLoaded', function () {
         const validPassword = 'examplepassword';
 
         // Check if the entered credentials are valid
-        if (username === validUsername && password === validPassword) {
-            // Redirect based on screen width
-            if (window.innerWidth <= 600) {
-                window.location.href = '/home.html';
-            } else {
+        if (username === validUsername && password === validPassword)
+            
+        
                 window.location.href = 'main.html';
             }
         } else {
